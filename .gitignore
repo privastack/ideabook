@@ -1,0 +1,12 @@
+# macOS Finder metadata. Harmless, but this repo is served as a public website —
+# anything committed here is downloadable by anyone.
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor and OS noise
+Thumbs.db
+*.swp
+.idea/
+.vscode/
