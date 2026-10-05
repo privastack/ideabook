@@ -56,6 +56,27 @@
   the app capable of collecting it. The one network connection it can make is to Google Drive,
   and only when you ask for a backup.</p>
 
+  <h2>Why IdeaBook asks for Google Drive access</h2>
+  <p>IdeaBook requests one Google permission, and only if you switch on Drive backup in Settings:
+  <code>drive.appdata</code>.</p>
+  <ul>
+    <li><b>What it is for.</b> Writing a single backup archive of your notes, photos and reminders
+      into a private folder in <em>your</em> Google Drive, so you can restore them on a new phone.
+      That is the only thing it is used for.</li>
+    <li><b>What it can reach.</b> <code>drive.appdata</code> is a hidden folder that belongs to this
+      app alone. It cannot see, read, open or alter any other file in your Drive — not your
+      documents, not your photos, not files created by other apps.</li>
+    <li><b>Where the data goes.</b> To your own Google Drive account. There is no server belonging
+      to IdeaBook, so no copy is sent anywhere else, and the developer has no way to read it.</li>
+    <li><b>Encryption.</b> If you set a passphrase, the archive is encrypted on your phone with
+      AES-256-GCM before it is uploaded. Without that passphrase nobody — including the developer
+      — can read its contents.</li>
+    <li><b>It is optional and reversible.</b> Drive backup is off until you turn it on, and you can
+      revoke the app's access at any time at
+      <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+  </ul>
+  <p>Full detail is in the <a href="privacy/">privacy policy</a>.</p>
+
   <h2>Get it</h2>
   <p><a href="https://play.google.com/store/apps/details?id=org.privastack.ideabook">IdeaBook on
   Google Play</a></p>
